@@ -43,7 +43,7 @@ describe 'reddit-jokes', ->
 
   for test in tests
     do (test) ->
-      it( 'responds to tell me a '+test[0]+' joke with a joke from '+test[1] , ->
+      it( 'responds to tell me a '+test[0]+' joke with a joke from '+test[1], ->
         @room.user.say('alice', '@hubot tell me a '+test[0]+' joke').then =>
           expect(@room.messages).to.eql [
             ['alice', '@hubot tell me a '+test[0]+' joke']
