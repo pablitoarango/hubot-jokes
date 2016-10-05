@@ -24,11 +24,11 @@ Then add **hubot-reddit-jokes** to your `external-scripts.json`:
 
 Retreive a random joke from /r/jokes
 
-### Tell me a <type> joke *or* <type> joke
+### Tell me a \<type\> joke *or* \<type\> joke
 
-If type is one of the allwed types it'll retreive a random joke from corresponding subreddit
+If type is one of the allowed types it'll retreive a random joke from corresponding subreddit
 
-#### Allowed types and corresponding subreddit:
+Allowed types and corresponding subreddit:
 * simple - r/jokes
 * dad - r/dadjokes
 * mom - r/mommajokes
@@ -36,11 +36,23 @@ If type is one of the allwed types it'll retreive a random joke from correspondi
 * clean - r/cleanjokes
 * classy - r/classyjokes
 
+
+
 ## Sample Interaction
 
 ```
 user1>> hubot tell me a joke
-hubot>> <random joke from reddit>
+hubot>> <random joke from r/jokes >
+```
+
+```
+user1>> hubot tell me a dad joke
+hubot>> <random joke from r/dadjokes >
+```
+
+```
+user1>> hubot yo momma joke
+hubot>> <random joke from r/mommajokes >
 ```
 
 ## NPM Module
