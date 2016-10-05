@@ -1,6 +1,6 @@
 # Hubot Reddit Jokes
 
-A hubot script that retreives random reddit jokes building on [original reddit-jokes script by tombell and ericjsilva](https://github.com/github/hubot-scripts/blob/master/src/scripts/reddit-jokes.coffee)
+A hubot script that retreives random reddit jokes by building on [original reddit-jokes script by tombell and ericjsilva](https://github.com/github/hubot-scripts/blob/master/src/scripts/reddit-jokes.coffee)
 
 See [`src/reddit-jokes.coffee`](src/reddit-jokes.coffee) for full documentation.
 
