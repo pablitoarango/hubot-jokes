@@ -1,4 +1,4 @@
-# hubot-reddit-jokes
+# Hubot Reddit Jokes
 
 A hubot script that retreives random reddit jokes building on [original reddit-jokes script by tombell and ericjsilva](https://github.com/github/hubot-scripts/blob/master/src/scripts/reddit-jokes.coffee)
 
@@ -17,6 +17,24 @@ Then add **hubot-reddit-jokes** to your `external-scripts.json`:
   "hubot-reddit-jokes"
 ]
 ```
+
+## Commands
+
+### Tell me a joke
+
+Retreive a random joke from /r/jokes
+
+### Tell me a <type> joke *or* <type> joke
+
+If type is one of the allwed types it'll retreive a random joke from corresponding subreddit
+
+#### Allowed types and corresponding subreddit:
+* simple - r/jokes
+* dad - r/dadjokes
+* mom - r/mommajokes
+* yo momma - r/mommajokes
+* clean - r/cleanjokes
+* classy - r/classyjokes
 
 ## Sample Interaction
 
