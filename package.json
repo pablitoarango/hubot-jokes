@@ -17,7 +17,8 @@
     "url": "https://github.com/hubot-scripts/hubot-reddit-jokes/issues"
   },
   "dependencies": {
-    "coffee-script": "^1.6.3"
+    "coffee-script": "^1.6.3",
+    "promise": "^7.1.1"
   },
   "peerDependencies": {
     "hubot": "2.x"
