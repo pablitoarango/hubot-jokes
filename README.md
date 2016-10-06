@@ -1,8 +1,14 @@
 # Hubot Reddit Jokes
 
+[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-reddit-jokes/master.svg?maxAge=2592000)](https://travis-ci.org/slackhq/hubot-slack)
+[![npm](https://img.shields.io/npm/v/hubot-reddit-jokes.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-reddit-jokes)
+
+
 A hubot script that retreives random reddit jokes by building on [original reddit-jokes script by tombell and ericjsilva](https://github.com/github/hubot-scripts/blob/master/src/scripts/reddit-jokes.coffee)
 
 See [`src/reddit-jokes.coffee`](src/reddit-jokes.coffee) for full documentation.
+
+
 
 ## Installation
 
