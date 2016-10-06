@@ -1,6 +1,6 @@
 # Hubot Jokes
 
-[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-jokes/master.svg?maxAge=2592000)](https://travis-ci.org/WhosPablo/hubot-jokes/)
+[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-jokes/master.svg?maxAge=2592000)](https://travis-ci.org/WhosPablo/hubot-jokes)
 [![npm](https://img.shields.io/npm/v/hubot-jokes.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-jokes)
 
 
