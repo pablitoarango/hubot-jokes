@@ -1,3 +1,4 @@
+require('es6-promise').polyfill()
 Helper = require('hubot-test-helper')
 chai = require('chai')
 nock = require('nock')
@@ -34,8 +35,12 @@ describe 'reddit-jokes', ->
     @room.destroy()
     nock.cleanAll()
 
-  it( 'responds to tell me a joke with a joke from r/jokes' , ->
-    @room.user.say('alice', '@hubot tell me a joke').then =>
+  context 'user asks \"hubot tell me a joke\"', ->
+    beforeEach (done) ->
+      @room.user.say('alice', '@hubot tell me a joke')
+      setTimeout done, 100
+
+    it( 'responds with a joke from r/jokes', ->
       expect(@room.messages).to.eql [
         ['alice', '@hubot tell me a joke']
         ['hubot', 'This is not a joke its a test from r/jokes!']
@@ -43,8 +48,12 @@ describe 'reddit-jokes', ->
 
   for test in tests
     do (test) ->
-      it( 'responds to tell me a '+test[0]+' joke with a joke from '+test[1], ->
-        @room.user.say('alice', '@hubot tell me a '+test[0]+' joke').then =>
+      context 'user asks \"hubot tell me a '+test[0]+' joke\"', ->
+        beforeEach (done) ->
+          @room.user.say('alice', '@hubot tell me a '+test[0]+' joke')
+          setTimeout done, 100
+
+        it( 'responds with a joke from '+test[1], ->
           expect(@room.messages).to.eql [
             ['alice', '@hubot tell me a '+test[0]+' joke']
             ['hubot', 'This is not a joke its a test from '+test[1]+'!']
@@ -52,21 +61,31 @@ describe 'reddit-jokes', ->
 
   for test in tests
     do (test) ->
-      it( 'responds to '+test[0]+' joke with a joke from '+test[1] , ->
-        @room.user.say('alice', '@hubot '+test[0]+' joke').then =>
+      context 'user says \"hubot '+test[0]+' joke\"', ->
+        beforeEach (done) ->
+          @room.user.say('alice', '@hubot '+test[0]+' joke')
+          setTimeout done, 100
+
+        it( 'responds with a joke from '+test[1] , ->
           expect(@room.messages).to.eql [
             ['alice', '@hubot '+test[0]+' joke']
             ['hubot', 'This is not a joke its a test from '+test[1]+'!']
           ])
 
-
-  it( 'does not respond to gimme a joke' , ->
-    @room.user.say('alice', '@hubot gimme a joke').then =>
+  context 'user asks \"hubot gimme a joke\"', ->
+    beforeEach (done) ->
+      @room.user.say('alice', '@hubot gimme a joke')
+      setTimeout done, 100
+    it( 'does not respond to gimme a joke' , ->
       expect(@room.messages).to.eql [
         ['alice', '@hubot gimme a joke']
       ])
-  it( 'does not respond to just joke' , ->
-    @room.user.say('alice', '@hubot joke').then =>
+
+  context 'user asks \"hubot joke\"', ->
+    beforeEach (done) ->
+      @room.user.say('alice', '@hubot joke')
+      setTimeout done, 100
+    it( 'does not respond to just joke' , ->
       expect(@room.messages).to.eql [
         ['alice', '@hubot joke']
       ])
