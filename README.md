@@ -1,7 +1,7 @@
 # Hubot Jokes
 
-[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-jokes/master.svg?maxAge=2592000)](https://travis-ci.org/WhosPablo/hubot-jokes)
-[![npm](https://img.shields.io/npm/v/hubot-jokes.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-jokes)
+[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-jokes/master.svg?maxAge=1)](https://travis-ci.org/WhosPablo/hubot-jokes)
+[![npm](https://img.shields.io/npm/v/hubot-jokes.svg?maxAge=1)](https://www.npmjs.com/package/hubot-jokes)
 
 
 A hubot script that retreives random reddit jokes by building on [original reddit-jokes script by tombell and ericjsilva](https://github.com/github/hubot-scripts/blob/master/src/scripts/reddit-jokes.coffee)
