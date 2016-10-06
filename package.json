@@ -11,10 +11,10 @@
   "keywords": "hubot, hubot-scripts, hubot-reddit-jokes, jokes, reddit, dadjokes, random",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-reddit-jokes.git"
+    "url": "git://github.com/WhosPablo/hubot-reddit-jokes.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-reddit-jokes/issues"
+    "url": "https://github.com/WhosPablo/hubot-reddit-jokes/issues"
   },
   "dependencies": {
     "es6-promise": "^4.0.5",
