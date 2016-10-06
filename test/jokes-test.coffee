@@ -5,7 +5,7 @@ nock = require('nock')
 
 expect = chai.expect
 
-helper = new Helper('../src/reddit-jokes.coffee')
+helper = new Helper('../src/jokes.coffee')
 
 tests = [
   ['simple', 'r/jokes'],
@@ -16,7 +16,7 @@ tests = [
   ['clean', 'r/cleanjokes']
 ]
 
-describe 'reddit-jokes', ->
+describe 'jokes', ->
   beforeEach ->
     @room = helper.createRoom()
     do nock.disableNetConnect
