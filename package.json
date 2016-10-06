@@ -1,7 +1,7 @@
 {
   "name": "hubot-jokes",
   "description": "A hubot script that retreives random reddit jokes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Pablo Arango",
     "email": "pabloaran17@gmail.com",
