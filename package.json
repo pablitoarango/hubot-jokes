@@ -1,20 +1,20 @@
 {
-  "name": "hubot-reddit-jokes",
+  "name": "hubot-jokes",
   "description": "A hubot script that retreives random reddit jokes",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "author": {
     "name": "Pablo Arango",
     "email": "pabloaran17@gmail.com",
     "url": "https://github.com/WhosPablo"
   },
   "license": "MIT",
-  "keywords": "hubot, hubot-scripts, hubot-reddit-jokes, jokes, reddit, dadjokes, random",
+  "keywords": "hubot, hubot-scripts, hubot-jokes, jokes, reddit, dadjokes, random",
   "repository": {
     "type": "git",
-    "url": "git://github.com/WhosPablo/hubot-reddit-jokes.git"
+    "url": "git://github.com/WhosPablo/hubot-jokes.git"
   },
   "bugs": {
-    "url": "https://github.com/WhosPablo/hubot-reddit-jokes/issues"
+    "url": "https://github.com/WhosPablo/hubot-jokes/issues"
   },
   "dependencies": {},
   "peerDependencies": {

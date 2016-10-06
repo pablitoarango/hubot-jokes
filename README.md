@@ -1,12 +1,12 @@
-# Hubot Reddit Jokes
+# Hubot Jokes
 
-[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-reddit-jokes/master.svg?maxAge=2592000)](https://travis-ci.org/slackhq/hubot-slack)
-[![npm](https://img.shields.io/npm/v/hubot-reddit-jokes.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-reddit-jokes)
+[![Travis branch](https://img.shields.io/travis/WhosPablo/hubot-jokes/master.svg?maxAge=2592000)](https://travis-ci.org/WhosPablo/hubot-jokes/)
+[![npm](https://img.shields.io/npm/v/hubot-jokes.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-jokes)
 
 
 A hubot script that retreives random reddit jokes by building on [original reddit-jokes script by tombell and ericjsilva](https://github.com/github/hubot-scripts/blob/master/src/scripts/reddit-jokes.coffee)
 
-See [`src/reddit-jokes.coffee`](src/reddit-jokes.coffee) for full documentation.
+See [`src/jokes.coffee`](src/jokes.coffee) for full documentation.
 
 
 
@@ -14,13 +14,13 @@ See [`src/reddit-jokes.coffee`](src/reddit-jokes.coffee) for full documentation.
 
 In hubot project repo, run:
 
-`npm install hubot-reddit-jokes --save`
+`npm install hubot-jokes --save`
 
-Then add **hubot-reddit-jokes** to your `external-scripts.json`:
+Then add **hubot-jokes** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-reddit-jokes"
+  "hubot-jokes"
 ]
 ```
 
@@ -63,4 +63,4 @@ hubot>> <random joke from r/mommajokes >
 
 ## NPM Module
 
-https://www.npmjs.com/package/hubot-reddit-jokes
+https://www.npmjs.com/package/hubot-jokes
