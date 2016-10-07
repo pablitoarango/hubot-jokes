@@ -27,7 +27,7 @@ describe 'jokes', ->
       .reply( 200, {data:{children: [{
         data:{
           title: 'This is not a joke',
-          selftext: 'its a test from '+test[1]+'!'
+          selftext: 'its a test for '+test[1]+'!'
         }
       }]}}) for test in tests
 
@@ -43,7 +43,7 @@ describe 'jokes', ->
     it( 'responds with a joke from r/jokes', ->
       expect(@room.messages).to.eql [
         ['alice', '@hubot tell me a joke']
-        ['hubot', 'This is not a joke its a test from r/jokes!']
+        ['hubot', 'This is not a joke its a test for r/jokes!']
       ])
 
   for test in tests
@@ -56,7 +56,7 @@ describe 'jokes', ->
         it( 'responds with a joke from '+test[1], ->
           expect(@room.messages).to.eql [
             ['alice', '@hubot tell me a '+test[0]+' joke']
-            ['hubot', 'This is not a joke its a test from '+test[1]+'!']
+            ['hubot', 'This is not a joke its a test for '+test[1]+'!']
           ])
 
   for test in tests
@@ -69,7 +69,7 @@ describe 'jokes', ->
         it( 'responds with a joke from '+test[1] , ->
           expect(@room.messages).to.eql [
             ['alice', '@hubot '+test[0]+' joke']
-            ['hubot', 'This is not a joke its a test from '+test[1]+'!']
+            ['hubot', 'This is not a joke its a test for '+test[1]+'!']
           ])
 
   context 'user asks \"hubot gimme a joke\"', ->

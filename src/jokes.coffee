@@ -15,10 +15,10 @@
 #   Allowed types:
 #			simple - r/jokes
 #			dad - r/dadjokes
-#			mom - r/mommajokes
-#			yo momma - r/mommajokes
 #			clean - r/cleanjokes
 #			classy - r/classyjokes
+#     mom - r/mommajokes
+#     yo momma - r/mommajokes
 #
 # Author:
 #   whospablo, tombell, ericjsilva
@@ -44,17 +44,16 @@ module.exports = (robot) ->
     did_ask = msg.match[1]
     type = msg.match[2].trim()
 
-    if type is "dad"
-      sendJokeFrom(msg, "dadjokes")
-    else if type is "clean"
-      sendJokeFrom(msg, "cleanjokes")
-    else if type is "mom"
-      sendJokeFrom(msg, "mommajokes")
-    else if type is "yomomma"
-      sendJokeFrom(msg, "mommajokes")
-    else if type is "yo momma"
-      sendJokeFrom(msg, "mommajokes")
-    else if type is "classy"
-      sendJokeFrom(msg, "classyjokes")
-    else if type is "simple" or did_ask
+    type_to_link = {
+      'simple': "jokes",
+      'dad': 'dadjokes',
+      'clean': 'cleanjokes',
+      'classy': 'classyjokes',
+      'mom': 'mommajokes',
+      'yo momma': 'mommajokes'
+    }
+
+    if type of type_to_link
+      sendJokeFrom(msg, type_to_link[type])
+    else if did_ask
       sendJokeFrom(msg, "jokes")
