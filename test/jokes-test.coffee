@@ -40,10 +40,10 @@ describe 'jokes', ->
       @room.user.say('alice', '@hubot tell me a joke')
       setTimeout done, 100
 
-    it( 'responds with a joke from r/jokes', ->
+    it( 'responds with a joke from r/cleanjokes', ->
       expect(@room.messages).to.eql [
         ['alice', '@hubot tell me a joke']
-        ['hubot', 'This is not a joke its a test for r/jokes!']
+        ['hubot', 'This is not a joke its a test for r/cleanjokes!']
       ])
 
   for test in tests
