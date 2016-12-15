@@ -50,10 +50,11 @@ module.exports = (robot) ->
       'clean': 'cleanjokes',
       'classy': 'classyjokes',
       'mom': 'mommajokes',
-      'yo momma': 'mommajokes'
+      'yo momma': 'mommajokes',
+      'unfiltered': 'jokes'
     }
 
     if type of type_to_link
       sendJokeFrom(msg, type_to_link[type])
     else if did_ask
-      sendJokeFrom(msg, "jokes")
+      sendJokeFrom(msg, "cleanjokes")
