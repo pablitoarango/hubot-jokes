@@ -28,7 +28,7 @@ Then add **hubot-jokes** to your `external-scripts.json`:
 
 ### Tell me a joke
 
-Retreive a random joke from /r/jokes
+Retreive a random joke from /r/cleanjokes
 
 ### Tell me a \<type\> joke *or* \<type\> joke
 
