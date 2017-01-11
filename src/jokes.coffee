@@ -5,7 +5,7 @@
 #   None
 #
 # Commands:
-#   hubot tell me a joke - Replies with random joke from /r/jokes
+#   hubot tell me a joke - Replies with random joke from /r/cleanjokes
 #   hubot tell me a <allowed-type> joke -
 #       Replies with random joke from /r/<allowed-type>jokes
 #   hubot <allowed-type> joke -
