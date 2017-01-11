@@ -48,7 +48,7 @@ Allowed types and corresponding subreddit:
 
 ```
 user1>> hubot tell me a joke
-hubot>> <random joke from r/jokes >
+hubot>> <random joke from r/cleanjokes >
 ```
 
 ```
